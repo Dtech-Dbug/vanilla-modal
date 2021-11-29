@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
 :root {
   --primary-color: rgb(199, 18, 78);
   --secondary-color: rgb(14, 207, 46);
+  --basic-font: "Roboto", sans-serif;
 }
 
 * {
@@ -19,8 +22,9 @@ body {
     var(--secondary-color)
   );
   height: 90vh;
-  width: 50%;
+  width: 80%;
   margin: auto;
+  box-shadow: 2px 4px 6px black;
 }
 
 header,
@@ -28,20 +32,26 @@ main {
   text-align: center;
 }
 header {
-  text-decoration: underline;
   margin: 1rem 1rem;
+  font-family: var(--basic-font);
 }
 
 #modalBg,
 .modalBg {
-  position: relative;
-  top: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 10;
+  width: 100%; /* Full width */
+  height: 60%; /* Full height */
+  background-color: transparent;
 }
 
 .modalBg-inactive {
   display: none;
 }
 .modal {
+  background-color: aqua;
   border: 2px solid black;
   width: 70%;
   height: 30vh;
