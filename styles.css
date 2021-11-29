@@ -70,7 +70,7 @@ header {
   align-items: center;
 }
 
-button {
+#showModalBtn {
   box-shadow: 2px 4px 64px white;
   animation: animateBoxShadow 4s infinite ease-in;
 }
