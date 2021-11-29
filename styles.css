@@ -1,0 +1,55 @@
+:root {
+  --primary-color: rgb(199, 18, 78);
+  --secondary-color: rgb(14, 207, 46);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: white;
+  padding: 1rem;
+}
+body {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  height: 90vh;
+  width: 50%;
+  margin: auto;
+}
+
+header,
+main {
+  text-align: center;
+}
+header {
+  text-decoration: underline;
+  margin: 1rem 1rem;
+}
+
+#modalBg,
+.modalBg {
+  position: relative;
+  top: 0;
+}
+
+.modalBg-inactive {
+  display: none;
+}
+.modal {
+  border: 2px solid black;
+  width: 70%;
+  height: 30vh;
+  margin: auto;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
